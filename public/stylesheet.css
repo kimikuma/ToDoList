@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0,0,0,0.2);
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.nav-brand {
+  font-size: 1.5em;
+  color: #87cefa;
+  margin-left: 30px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.nav-item {
+  margin-right: 30px;
+  font-size: 1.2em;
+}
+
+.top {
+  text-align: center;
+}
+
+.item {
+  text-align: center;
+}
+
+.item_list {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.new_button {
+  position: absolute;
+  top: 100px;
+  right: 400px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #000000;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+table,td,th {
+  border: 1px solid #000000;
+}
+
+th,td {
+  padding: 15px;
+}
+
+.new, .edit {
+  text-align: center;
+}
+
+.new input, .edit input {
+  margin-bottom: 30px;
+  height: 30px;
+  width: 300px;
+}
+
+.delete_link {
+  padding: 7px;
+  background-color: rgba(255,0,0,0.5);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.8);
+}
+
+.active {
+  font-size: 2em;
+}
+
+
+footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,24 @@
+<%- include('header') %>
+ <div class="item">
+  <a href="/new" class="new_button">+</a>
+  <h1>To Do リスト</h1>
+  <table class="item_list">
+    <tr>
+      <th>To</th>
+      <th colspan="3">Do</th>
+    </tr>
+    <% items.forEach((item)=>{ %>
+    <tr>
+      <td><%=item.name %></td>
+      <td><%=item.do %></td>
+      <td><a href="/edit/<%=item.id %>">編集</a></td>
+      <td>
+        <form action="/delete/<%=item.id%>" method="post">
+          <input type="submit" value="削除" class="delete_link">
+        </form>
+      </td>
+    </tr>
+    <% }) %>
+  </table>
+ </div>
+<%- include('footer') %>

@@ -1,0 +1,12 @@
+<%- include("header") %>
+ <div class="new">
+  <h1>new</h1>
+  <form action="/create" method="post">
+   <label for="to">name</label><br>
+   <input type="text" name="itemName" id="to"><br>
+   <label for="do">do</label><br>
+   <input type="text" name="itemDo" id="do"><br>
+   <input type="submit" value="新規">
+  </form>
+ </div>
+<%- include('footer') %>

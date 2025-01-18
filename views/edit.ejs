@@ -1,0 +1,11 @@
+<%- include('header') %>
+ <div class="edit">
+   <h1>edit</h1>
+   <form action="/update/<%=item.id %>" method="post">
+    <label for="to">name</label><br>
+    <input type="text" name="itemName" id="to" value="<%=item.name%>"><br>
+    <label for="do">do</label><br>
+    <input type="text" name="itemDo" id="do" value="<%=item.do%>"><br>
+    <input type="submit" value="更新">
+   </form>
+ </div>
